@@ -1,5 +1,4 @@
 import 'package:expense_tracker/widgets/transaction_list.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 import './widgets/chart.dart';
@@ -37,20 +36,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final List<Transaction> _transactions = [
-    // Transaction(
-    //   id: '1',
-    //   title: 'shoes',
-    //   amount: 20.00,
-    //   dtg: DateTime.now(),
-    // ),
-    // Transaction(
-    //   id: '2',
-    //   title: 'banana',
-    //   amount: 2.00,
-    //   dtg: DateTime.now(),
-    // ),
-  ];
+  final List<Transaction> _transactions = [];
 
   List<Transaction> get _recentTransactions {
     return _transactions.where(
